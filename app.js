@@ -22,7 +22,7 @@
     });
 
 
-    var server = app.listen(3000, function listenFunct() {
+    var server = app.listen(process.env.PORT || 3000, function listenFunct() {
         console.log('Server on port 3000');
     });
 }());
