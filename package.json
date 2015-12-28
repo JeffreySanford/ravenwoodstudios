@@ -1,14 +1,14 @@
 {
   "name": "ravenwoodstudios",
   "version": "0.0.1",
-  "description": "SImple SPA for a portfolio page linked to ETSY and other social media.",
+  "description": "Simple SPA for a portfolio page linked to ETSY and other social media.",
   "author": "Jeffrey Sanford",
   "email": "jeffrey_sanford@hotmail.com",
+  "engines": {
+    "node": "5.1.0"
+  },
   "scripts": {
     "start": "node app.js"
-  },
-    "engines": {
-    "node": "5.1.0"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
