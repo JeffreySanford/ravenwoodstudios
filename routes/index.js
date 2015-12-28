@@ -4,7 +4,7 @@
     exports.index = function pageLanding(req, res) {
         console.log("landing view triggered");
 
-        res.render('Default', {
+        res.render('default', {
             title: 'Landing', //insert an object to the template
             classname: 'landing',
             usersObject: [
@@ -20,7 +20,7 @@
 
     exports.about = function pageAboutUs(req, res) {
         console.log("about view triggered");
-        res.render('Default', {
+        res.render('default', {
             title: 'About Us',
             classname: 'about'
         });
@@ -28,7 +28,7 @@
 
     exports.products = function pageProducts(req, res) {
         console.log("product view triggered");
-        res.render('Default', {
+        res.render('default', {
             title: 'Products',
             classname: 'products',
             productsArray: ['Box', 'Jewel', 'Present', 'Dehydrated Water', 'Canned Unicorn Meat', 'Rainbows'],
@@ -46,7 +46,7 @@
     exports.products.product = function pageProduct(req, res) {
         var id = 0;
         console.log("parameter hit.  parameter: " + req.params.id);
-        res.render('Itemized', {
+        res.render('itemized', {
             title: 'Product',
             item: req.params.id.slice(1),
             classname: 'product',
