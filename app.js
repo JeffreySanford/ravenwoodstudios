@@ -16,7 +16,6 @@
     app.get('/', routes.index);
     app.get('/about', routes.about);
     app.get('/products', routes.products);
-    app.get('/products:id', routes.products.product);
 
     app.get('*', function fail(req, res) {
         res.send('bad route found.');
