@@ -11,7 +11,6 @@
     app.use(express.static(__dirname + '/javascript'));
     
     app.set('view engine', 'ejs');
-    app.set('views', __dirname + '/views');  // not required if default views
 
     app.get('/', routes.index);
     app.get('/about', routes.about);
