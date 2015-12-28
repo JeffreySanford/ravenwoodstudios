@@ -11,6 +11,7 @@
     app.use(express.static(__dirname + '/javascript'));
     
     app.set('view engine', 'ejs');
+    app.set('views', __dirname+'/views'); //  Should not be required -- troublehsooting emplate issue on heroku
 
     app.get('/', routes.index);
     app.get('/about', routes.about);
