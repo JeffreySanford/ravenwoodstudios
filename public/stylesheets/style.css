@@ -54,12 +54,21 @@ header p {
 
 }
 
-.array-insert {
-	margin: 2em 0;
+.objects-insert {
+
+}
+
+#product-box {
+
+}
+
+#product-box:hover {
+
 }
 
 .row-centered {
     text-align: center;
+    margin: 0 auto;
 }
 
 footer {
