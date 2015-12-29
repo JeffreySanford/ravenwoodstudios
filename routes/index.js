@@ -31,7 +31,6 @@
         res.render('default', {
             title: 'Products',
             classname: 'products',
-            productsArray: ['Box', 'Jewel', 'Present', 'Dehydrated Water', 'Canned Unicorn Meat', 'Rainbows'],
             productsObject: [
                 {id: '53', productName: 'Box', productDescription: 'This is a description of the Box object', productImage: 'images/products/Box.png'},
                 {id: '23', productName: 'Jewel', productDescription: 'This is a description of the Jewel object', productImage: 'images/products/Jewel.png'},
@@ -50,7 +49,6 @@
             title: 'Product',
             item: req.params.id.slice(1),
             classname: 'product',
-            productsArray: ['Box', 'Jewel', 'Present', 'Dehydrated Water', 'Canned Unicorn Meat', 'Rainbows'],
             productsObject: [
                 {id: '53', productName: 'Box', productDescription: 'This is a description of the Box object', productImage: 'images/products/Box.png'},
                 {id: '23', productName: 'Jewel', productDescription: 'This is a description of the Jewel object', productImage: 'images/products/Jewel.png'},

@@ -4,19 +4,21 @@
 	} else {
 		console.error("users not found.");
 	} %>
-	<div class="array-insert">
-		<div class="row row-center">
-			<ul>
-				<% for (key in usersObject) { %>
-					<div class="col-lg-3 col-md-3 col-sm-4 text-center">
-						<li>
-							<img src="https://placehold.it/200x200">
-							<p class="text-center"><%= usersObject[key].name %></p>
-						</li>
-					</div> <!--col class end -->
-				<% } %>
-			</ul>
-		</div> <!-- row class end -->
+	<div class="objects-insert">
+		<div class="row-centered">
+			<div class="row">
+				<ul>
+					<% for (key in usersObject) { %>
+						<div class="col-lg-3 col-md-3 col-sm-4 text-center">
+							<li>
+								<img src="https://placehold.it/200x200">
+								<p class="text-center"><%= usersObject[key].name %></p>
+							</li>
+						</div> <!--col class end -->
+					<% } %>
+				</ul>
+			</div> <!-- row class end -->
+		</div> <!-- row-centered class end -->
 	</div> <!--array-insert class end -->
 <% } else if (title === 'Products') { %>
 	<% if (productsObject !== 'undefined') {
@@ -25,8 +27,8 @@
 		console.error("productsObject not found.");
 	} %>
 	<div class="objects-insert">
-		<div id="center-the-bootstrap-row" class="row-centered">
-			<div class="row" style="margin: 2em 0;">
+		<div class="row-centered">
+			<div class="row">
 				<ul>
 					<% for (key in productsObject) { %>
 						<% var url = '/products:' + productsObject[key].id; %>
