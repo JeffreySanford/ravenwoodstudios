@@ -25,12 +25,12 @@
             item: req.params.id.slice(1),
             classname: 'user',
             usersObject: [
-                {id: '57', name: 'Ray', email: 'ray@gmail.com', image: 'images/artists/ray.png'},
-                {id: '29', name: 'Frank', email: 'frank@gmail.com', image: 'images/artists/frank.png'},
-                {id: '63', name: 'Bob', email: 'bob@gmail.com', image: 'images/artists/bob.png'},
-                {id: '46', name: 'Sam', email: 'sam@gmail.com', image: 'images/artists/sam.png'},
-                {id: '32', name: 'Linda', email: 'linda@gmail.com', image: 'images/artists/linda.png'},
-                {id: '61', name: 'Shelly', email: 'shelly@gmail.com', image: 'images/artists/shelly.png'}
+                {id: '57', artistName: 'Ray', email: 'ray@gmail.com', artistImage: 'images/artists/ray.png'},
+                {id: '29', artistName: 'Frank', email: 'frank@gmail.com', artistImage: 'images/artists/frank.png'},
+                {id: '63', artistName: 'Bob', email: 'bob@gmail.com', artistImage: 'images/artists/bob.png'},
+                {id: '46', artistName: 'Sam', email: 'sam@gmail.com', artistImage: 'images/artists/sam.png'},
+                {id: '32', artistName: 'Linda', email: 'linda@gmail.com', artistImage: 'images/artists/linda.png'},
+                {id: '61', artistName: 'Shelly', email: 'shelly@gmail.com', artistImage: 'images/artists/shelly.png'}
             ] // insert user's object
         });
     };

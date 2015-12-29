@@ -35,13 +35,15 @@
 		console.log("item is currently " + item);
 		if (usersObject[key].id === item) { %>
 			<div style="width: 80%; margin: 0 auto;">
-				<img src="https://placehold.it/400x400" style="float: left;">
-				<h2 style="text-align: left;">User Name: <%= usersObject[key].userName %>
+				<img src="https://placehold.it/400x400" style="float: left; margin-right: .5em;">
+				<h2 style="text-align: left;">User Name: <%= usersObject[key].artistName %>
 				<br><br>
-				<p style="text-align: left; font-size: .8em;">Product Description: <%= userObject[key].userDescription %></p>
+				<p style="text-align: left; font-size: .8em;">Product Description: 
+				<!-- <%= usersObject[key].userDescription %> -->
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam repudiandae, minima voluptatibus numquam quos obcaecati consequatur eligendi fugit saepe vero iste beatae impedit quis voluptatem, eos placeat sapiente tenetur, eum.</p>
 				<div class="clearfix"></div>
 				<br><br>
-				<p>Product image is not located at: <%= usersproductsObject[key].usersImage %></p>
+				<p>Product image is not located at: <%= usersObject[key].artistImage %></p>
 			</div>
 		<% } %> <!-- End user loop -->
 	<% } %> <!-- End user function-->
