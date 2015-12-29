@@ -3,17 +3,34 @@
 
     exports.index = function pageLanding(req, res) {
         console.log("landing view triggered");
-
         res.render('default', {
-            title: 'Landing', //insert an object to the template
+            title: 'Landing', 
             classname: 'landing',
             usersObject: [
-                {id: '1', name: 'Ray', email: 'ray@gmail.com', image: 'images/artists/ray.png'},
-                {id: '2', name: 'Frank', email: 'frank@gmail.com', image: 'images/artists/frank.png'},
-                {id: '3', name: 'Bob', email: 'bob@gmail.com', image: 'images/artists/bob.png'},
-                {id: '4', name: 'Sam', email: 'sam@gmail.com', image: 'images/artists/sam.png'},
-                {id: '5', name: 'Linda', email: 'linda@gmail.com', image: 'images/artists/linda.png'},
-                {id: '6', name: 'Shelly', email: 'shelly@gmail.com', image: 'images/artists/shelly.png'}
+                {id: '57', name: 'Ray', email: 'ray@gmail.com', image: 'images/artists/ray.png'},
+                {id: '29', name: 'Frank', email: 'frank@gmail.com', image: 'images/artists/frank.png'},
+                {id: '63', name: 'Bob', email: 'bob@gmail.com', image: 'images/artists/bob.png'},
+                {id: '46', name: 'Sam', email: 'sam@gmail.com', image: 'images/artists/sam.png'},
+                {id: '32', name: 'Linda', email: 'linda@gmail.com', image: 'images/artists/linda.png'},
+                {id: '61', name: 'Shelly', email: 'shelly@gmail.com', image: 'images/artists/shelly.png'}
+            ] // insert user's object
+        });
+    };
+
+    exports.user = function pageUser(req, res) {
+        var i = 0;
+        console.log("landing view triggered");
+        res.render('single', {
+            title: 'User',
+            item: req.params.id.slice(1),
+            classname: 'user',
+            usersObject: [
+                {id: '57', name: 'Ray', email: 'ray@gmail.com', image: 'images/artists/ray.png'},
+                {id: '29', name: 'Frank', email: 'frank@gmail.com', image: 'images/artists/frank.png'},
+                {id: '63', name: 'Bob', email: 'bob@gmail.com', image: 'images/artists/bob.png'},
+                {id: '46', name: 'Sam', email: 'sam@gmail.com', image: 'images/artists/sam.png'},
+                {id: '32', name: 'Linda', email: 'linda@gmail.com', image: 'images/artists/linda.png'},
+                {id: '61', name: 'Shelly', email: 'shelly@gmail.com', image: 'images/artists/shelly.png'}
             ] // insert user's object
         });
     };
@@ -45,7 +62,7 @@
     exports.products.product = function pageProduct(req, res) {
         var id = 0;
         console.log("parameter hit.  parameter: " + req.params.id);
-        res.render('single-product', {
+        res.render('single', {
             title: 'Product',
             item: req.params.id.slice(1),
             classname: 'product',

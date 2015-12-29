@@ -5,7 +5,6 @@
     var routes = require('./routes');
 
     app.use(express.static(__dirname + '/public'));
-    app.use(express.static(__dirname + '/data'));
     app.use(express.static(__dirname + '/images'));
     app.use(express.static(__dirname + '/stylesheets'));
     app.use(express.static(__dirname + '/javascript'));
@@ -15,6 +14,7 @@
     app.set('data', __dirname+'/data'); //  this is the directory I will keep the local json files in.
 
     app.get('/', routes.index);
+    app.get('/user:id', routes.user);
     app.get('/about', routes.about);
     app.get('/products', routes.products);
     app.get('/products:id', routes.products.product);
