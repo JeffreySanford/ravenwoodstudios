@@ -12,7 +12,9 @@
     
     app.set('view engine', 'ejs');
     app.set('views', __dirname+'/views'); //  Should not be required -- troublehsooting emplate issue on heroku
-
+    app.set('data', __dirname+'/data'); //  this is the directory I will keep the local json files in.
+    app.locals.rmWhitespace = true;
+    
     app.get('/', routes.index);
     app.get('/about', routes.about);
     app.get('/products', routes.products);
