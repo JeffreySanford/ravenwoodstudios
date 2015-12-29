@@ -46,7 +46,7 @@
     exports.products.product = function pageProduct(req, res) {
         var id = 0;
         console.log("parameter hit.  parameter: " + req.params.id);
-        res.render('itemized', {
+        res.render('single-product', {
             title: 'Product',
             item: req.params.id.slice(1),
             classname: 'product',
