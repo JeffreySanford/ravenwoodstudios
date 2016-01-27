@@ -28,7 +28,7 @@ header p {
 }
 
 #top-nav ul, ul {
-	list-decoration: none;
+	text-decoration: none;
 	font-size: 1.5em;
 	list-style-type: none;
 	text-align:right;
