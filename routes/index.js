@@ -1,4 +1,4 @@
-(function IFEE() {
+(function IIFE() {
     'use strict';
 
     exports.index = function pageLanding(req, res) {
